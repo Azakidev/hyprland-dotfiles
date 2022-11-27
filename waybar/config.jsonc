@@ -1,0 +1,80 @@
+{
+    "layer": "top",
+    "position": "top",
+
+    // Choose the order of the modules
+    "modules-left": ["wlr/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["idle_inhibitor", "custom/gammastep", "bluetooth", "custom/media", "pulseaudio", "tray", "custom/sysmenu"],
+
+    // Modules configuration
+    "wlr/workspaces": {
+        "all-outputs": true,
+        "format": "{name}",
+        "on-click": "activate"
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    "clock": {
+        "timezone": "Europe/Madrid",
+        "interval": 60,
+        "format": "{:%I:%M %p}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d-%m-%Y}"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}% {format_source}",
+        "format-bluetooth": "{icon}󰂯 {volume}% {format_source}",
+        "format-bluetooth-muted": "󰖁󰂯 {volume}% {format_source}",
+        "format-muted": "󰖁 {volume}% {format_source}",
+        "format-source": "󰍬 {volume}%",
+        "format-source-muted": "󰍭 {volume}%",
+        "format-icons": {
+          "headphone": "󰋋",
+          "hands-free": "",
+          "headset": "󰋋",
+          "phone": "",
+          "portable": "",
+          "car": "",
+          "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "pavucontrol",
+        "tooltip": false
+      },
+    "custom/media": {
+        "format": "{}",
+        "interval": 1,
+        "exec": "~/.config/waybar/scripts/playerctl.sh",
+        "on-click": "playerctl play-pause",
+        "return-type": "json",
+        "tooltip": false
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "☀️",
+            "deactivated": "🌙"
+        }
+    },
+    "bluetooth": {
+        "format-disabled": "󰂯 {status}",
+        "format-off": "",
+        "format-on": "󰂯",
+        "format-connected": "󰂯 {device_alias}",
+        "format-connected-battery": "󰂯 {device_alias} 󰂄 {device_battery_percentage}%"
+    },
+    "custom/sysmenu": {
+        "format": "󰤆",
+        "on-click": "~/.config/waybar/scripts/sysmenu.sh &",
+        "tooltip": false
+      },
+      "custom/gammastep": {
+        "format": "{}",
+        "interval": 5,
+        "on-update": "",
+        "exec": "sleep 0.05; /home/zazag/.config/waybar/scripts/gammastep.sh",
+        "on-click": "/home/zazag/.config/waybar/scripts/gammastep.sh toggle"
+    }
+}

@@ -1,0 +1,26 @@
+
+/*   Colors!   */
+
+@define-color base      #1e1e2e;
+@define-color dark     #11111b;
+
+@define-color text      #cdd6f4;
+@define-color subtext  #a6adc8;
+
+@define-color surface0  #313244;
+@define-color surface1  #45475a;
+@define-color surface2  #585b70;
+
+@define-color overlay0  #6c7086;
+@define-color overlay1  #7f849c;
+@define-color overlay2  #9399b2;
+
+@define-color purple       #a77dbe;
+@define-color pink   #deb4fe;
+@define-color cyan        #89dceb;
+@define-color green      #a6e3a1;
+@define-color red        #f38ba8;
+@define-color mauve      #cba6f7;
+@define-color pink       #f5c2e7;
+@define-color flamingo   #f2cdcd;
+@define-color rosewater  #f5e0dc;

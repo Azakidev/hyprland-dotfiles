@@ -1,0 +1,197 @@
+@import "/home/zazag/.config/waybar/themes/colors.css";
+
+/* Download icons font: https://github.com/Templarian/MaterialDesign-Font */
+* {
+  font-family: Iosevka Fixed, Material Design Icons Desktop;
+  font-size: 14px;
+}
+
+/* Waybar */
+window#waybar {
+  background-color: rgba(30, 30, 46, 0.8);
+  color: @text;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* Modules */
+#tray,
+#custom-media,
+#cpu,
+#memory,
+#backlight,
+#pulseaudio,
+#network,
+#bluetooth,
+#battery,
+#clock,
+#custom-sysmenu,
+
+#window {
+  padding: 2px 10px;
+  color: @text;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 10px;
+}
+
+/* Launcher */
+#custom-launcher {
+  background-color: pink;
+  color: @dark;
+  padding: 1px 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 2px;
+  transition-duration: 0.2s;
+}
+
+/* Workspaces */
+#workspaces {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#workspaces button {
+  background-color: @surface0;
+  padding: 1px 8px;
+  color: @subtext;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+}
+
+#workspaces button:hover {
+  background-color: @purple;
+  color: @dark;
+  transition-duration: 0.2s;
+}
+
+#workspaces button.active {
+  padding: 1px 12px;
+  background-color: @pink;
+  color: @dark;
+  transition-duration: 0.2s;
+}
+
+#workspaces button.focused {
+  background-color: @pink;
+  color: @dark;
+}
+
+#workspaces button.urgent {
+  background-color: @red;
+  color: @dark;
+}
+
+/* Tray */
+#tray {
+  background-color: @surface1;
+  color: @dark;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
+}
+
+/* Custom Media */
+#custom-media {
+  background-color: @mauve;
+  color: @dark;
+}
+
+#custom-media.playing {
+  background-color: @green;
+  transition-duration: 0.5s;
+}
+
+#custom-media.paused {
+  background-color: @red;
+  transition-duration: 0.5s;
+}
+
+/* Backlight */
+#backlight {
+  background-color: #ffffff;
+  color: @dark;
+}
+
+/* Pulseaudio */
+#pulseaudio {
+  background-color: @mauve;
+  color: @dark;
+}
+
+#pulseaudio.muted {
+  background-color: @red;
+  color: @dark;
+}
+
+/* bluetooth */
+#bluetooth {
+  background-color: @cyan;
+  color: @dark;
+}
+
+#bluetooth.disabled {
+  background-color: @pink;
+}
+
+#bluetooth.off {
+  background-color: @red;
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+/* Clock */
+#clock {
+  background-color: @pink;
+  color: @dark;
+}
+
+/* Custom SysMenu */
+#custom-sysmenu {
+  background-color: @red;
+  color: @dark;
+  padding: 1px 8px;
+  margin-right: 10px;
+}
+
+#custom-gammastep {
+  background-color: @surface1;
+  color: #ffffff;
+  padding: 1px 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 3px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#idle_inhibitor {
+  background-color: @surface1;
+  color: #ffffff;
+  padding: 1px 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 3px;
+  margin-right: 0px;
+  border-radius: 10px 0px 0px 10px;
+}
