@@ -5,7 +5,7 @@
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["idle_inhibitor", "custom/gammastep", "bluetooth", "custom/media", "pulseaudio", "tray", "custom/sysmenu"],
+    "modules-right": ["idle_inhibitor", "custom/gammastep", "tray", "custom/media", "pulseaudio", "custom/sysmenu"],
 
     // Modules configuration
     "wlr/workspaces": {
@@ -56,7 +56,8 @@
         "format-icons": {
             "activated": "☀️",
             "deactivated": "🌙"
-        }
+        },
+        "tooltip": false
     },
     "bluetooth": {
         "format-disabled": "󰂯 {status}",
@@ -75,6 +76,7 @@
         "interval": 5,
         "on-update": "",
         "exec": "sleep 0.05; /home/zazag/.config/waybar/scripts/gammastep.sh",
-        "on-click": "/home/zazag/.config/waybar/scripts/gammastep.sh toggle"
+        "on-click": "/home/zazag/.config/waybar/scripts/gammastep.sh toggle",
+        "tooltip": false
     }
 }
