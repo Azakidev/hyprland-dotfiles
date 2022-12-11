@@ -3,3 +3,5 @@
 My dotfiles for hyprland
 
 It's also my first rice ever, do with these what you may
+
+Theme for apps is dracula
