@@ -11,7 +11,9 @@
     "wlr/workspaces": {
         "all-outputs": true,
         "format": "{name}",
-        "on-click": "activate"
+        "on-click": "activate",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
+        "on-scroll-up": "hyprctl dispatch workspace e-1"
     },
     "tray": {
         "icon-size": 18,

@@ -1,0 +1,36 @@
+screenshots
+clock
+indicator
+
+timestr=%I:%M %p
+datestr=%d / %m / %Y
+
+font=Google Sans
+
+indicator-radius=100
+indicator-thickness=8
+
+effect-blur=8x5 
+effect-vignette=.5:0.5 
+
+ring-color=DEB4FEFF
+ring-clear-color=A77DBEBF
+ring-ver-color=45475ABF
+
+key-hl-color=A77DBEFF
+
+text-color=CBA6F7
+text-caps-lock-color=f2cdcd
+
+line-color=00000000
+
+inside-color=313244BF
+inside-caps-lock-color=45475a
+inside-ver-color=89dceb
+inside-wrong-color=f38ba8
+inside-clear-color=a6e3a1
+
+separator-color=00000000
+
+grace=2
+fade-in=0.2
