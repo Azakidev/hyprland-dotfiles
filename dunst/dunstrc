@@ -45,3 +45,7 @@ mouse_right_click = close_current
     foreground = "#ffffff"
     background = "#cba6f7"
     timeout = 0
+
+[play_sound]
+    summary = "*"
+    script = "/home/zazag/Documents/hyprland-dotfiles/notifsound.sh"
