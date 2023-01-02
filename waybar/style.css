@@ -29,13 +29,16 @@ window#waybar {
 #custom-sysmenu,
 
 #window {
-  padding: 2px 10px;
-  color: @text;
+  background-color: @surface1;
+  padding-left: 8px;
+  padding-right: 8px;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 2px;
+  margin-left: 10px;
   margin-right: 2px;
+  border: solid 2px;
   border-radius: 10px;
+  border-color: @surface2;
 }
 
 /* Launcher */
@@ -233,4 +236,12 @@ window#waybar {
   border-style: solid;
   border-width: 2px 0px 2px 2px;
   border-color: @surface2;
+}
+
+#memory {
+  background-color: @surface1;
+  color: #cccccc;
+  border-style: solid;
+  border-color: @surface2;
+  border-width: 2px;
 }
