@@ -6,18 +6,19 @@ height = 500
 origin = top-right
 notification_limit = 3
 word_wrap = yes
-idle_threshold = "5m"
+idle_threshold = "10m"
 
 gap_size = 4
 offset = 10x5
-transparency = 60
 
 icon_position = left
 corner_radius = 10
-font = "Google Sans 12"
+font = "MiSans 12"
 format = "<b>%s</b>\n%b"
 
 frame_width = 2
+frame_color = "#45475a"
+background = "#313244aa"
 min_icon_size = 48
 max_icon_size = 64
 
@@ -25,25 +26,21 @@ mouse_left_click = do_action
 mouse_middle_click = close_all
 mouse_right_click = close_current
 
+timeout = 10
+
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
 
 [urgency_low]
-    frame_color = "#45475a"
     foreground = "#49ada7"
-    background = "#313244"
-    timeout = 10
 
 [urgency_normal]
-    frame_color = "#45475a"
     foreground = "#ffffff"
-    background = "#313244"
     script = "/home/zazag/Documents/hyprland-dotfiles/notifsound.sh"
-    timeout = 10
 
 [urgency_critical]
     frame_color = "#cba6f7"
     foreground = "#ffffff"
-    background = "#f38ba8"
+    background = "#f38ba8aa"
     timeout = 0
     script = "/home/zazag/Documents/hyprland-dotfiles/notifsound.sh"
