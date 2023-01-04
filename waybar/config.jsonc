@@ -5,7 +5,7 @@
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["memory", "idle_inhibitor", "custom/gammastep", "custom/media", "tray", "pulseaudio", "custom/notifications", "custom/sysmenu"],
+    "modules-right": ["memory", "idle_inhibitor", "custom/swaylock", "custom/gammastep", "custom/media", "tray", "pulseaudio", "custom/notifications", "custom/sysmenu"],
 
     // Modules configuration
     "wlr/workspaces": {
@@ -61,6 +61,14 @@
         },
         "tooltip": false
     },
+    "custom/gammastep": {
+        "format": "{}",
+        "interval": 5,
+        "on-update": "",
+        "exec": "sleep 0.05; /home/zazag/.config/waybar/scripts/gammastep.sh",
+        "on-click": "pkill gammastep || gammastep",
+        "tooltip": false
+    },
     "bluetooth": {
         "format-disabled": "󰂯 {status}",
         "format-off": "",
@@ -73,14 +81,6 @@
         "on-click": "~/.config/waybar/scripts/sysmenu.sh &",
         "tooltip": false
       },
-      "custom/gammastep": {
-        "format": "{}",
-        "interval": 5,
-        "on-update": "",
-        "exec": "sleep 0.05; /home/zazag/.config/waybar/scripts/gammastep.sh",
-        "on-click": "pkill gammastep || gammastep",
-        "tooltip": false
-    },
     "hyprland/window": {
         "format": "{}"
     },
@@ -94,5 +94,10 @@
         "tooltip": false,
         "on-click": "dunstctl history-pop",
         "on-click-right": "dunstctl history-pop & dunstctl history-pop & dunstctl history-pop"
+    },
+    "custom/swaylock": {
+        "fortmat": "🔒️",
+        "on-click": "swaylock",
+        "tooltip":false
     }
 }

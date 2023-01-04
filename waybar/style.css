@@ -2,7 +2,7 @@
 
 /* Download icons font: https://github.com/Templarian/MaterialDesign-Font */
 * {
-  font-family: Google Sans Fixed , Material Design Icons Desktop;
+  font-family: MiSans Regular , Material Design Icons Regular;
   font-size: 14px;
 }
 
@@ -195,20 +195,6 @@ window#waybar {
   border-color: #eb4d4b;
 }
 
-#custom-gammastep {
-  background-color: @surface1;
-  color: #ffffff;
-  padding: 1px 8px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 0px;
-  margin-right: 3px;
-  border-radius: 0px 10px 10px 0px;
-  border-style: solid;
-  border-width: 2px 2px 2px 0px;
-  border-color: @surface2;
-}
-
 #idle_inhibitor {
   background-color: @surface1;
   color: #ffffff;
@@ -223,6 +209,19 @@ window#waybar {
   border-color: @surface2;
 }
 
+#custom-gammastep {
+  background-color: @surface1;
+  padding: 1px 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 3px;
+  border-radius: 0px 10px 10px 0px;
+  border-style: solid;
+  border-width: 2px 2px 2px 0px;
+  border-color: @surface2;
+}
+
 #memory {
   background-color: @surface1;
   color: #cccccc;
@@ -233,7 +232,6 @@ window#waybar {
 
 #custom-notifications {
   background-color: @surface1;
-  color: #cccccc;
   margin: 5px;
   padding: 5px;
   border: solid 2px;
