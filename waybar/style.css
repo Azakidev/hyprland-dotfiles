@@ -230,3 +230,13 @@ window#waybar {
   border-radius: 10px;
   border-color: @surface2;
 }
+
+#custom-notifications {
+  background-color: @surface1;
+  color: #cccccc;
+  margin: 5px;
+  padding: 5px;
+  border: solid 2px;
+  border-radius: 10px;
+  border-color: @surface2;
+}

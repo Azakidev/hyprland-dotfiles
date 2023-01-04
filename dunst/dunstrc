@@ -10,7 +10,7 @@ idle_threshold = "5m"
 
 gap_size = 4
 offset = 10x5
-transparency = 40
+transparency = 60
 
 icon_position = left
 corner_radius = 10
@@ -25,9 +25,10 @@ mouse_left_click = do_action
 mouse_middle_click = close_all
 mouse_right_click = close_current
 
-[urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
+
+[urgency_low]
     frame_color = "#45475a"
     foreground = "#49ada7"
     background = "#313244"
@@ -37,15 +38,12 @@ mouse_right_click = close_current
     frame_color = "#45475a"
     foreground = "#ffffff"
     background = "#313244"
-
+    script = "/home/zazag/Documents/hyprland-dotfiles/notifsound.sh"
     timeout = 10
 
 [urgency_critical]
-    frame_color = "#f38ba8"
+    frame_color = "#cba6f7"
     foreground = "#ffffff"
-    background = "#cba6f7"
+    background = "#f38ba8"
     timeout = 0
-
-[play_sound]
-    summary = "*"
     script = "/home/zazag/Documents/hyprland-dotfiles/notifsound.sh"
