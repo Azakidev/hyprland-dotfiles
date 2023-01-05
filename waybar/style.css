@@ -8,7 +8,7 @@
 
 /* Waybar */
 window#waybar {
-  background-color: rgba(30, 30, 46, 0.4);
+  background-color: rgba(30, 30, 46, 0.6);
   color: @text;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -66,7 +66,7 @@ window#waybar {
   margin-left: 2px;
   margin-right: 2px;
   border-radius: 10px;
-  border: solid 2px;
+  border: solid 1px;
   border-color: @surface1;
   transition-duration: 0.2s;
 }
@@ -104,7 +104,7 @@ window#waybar {
 #tray {
   background-color: @surface1;
   color: @dark;
-  border: solid 2px;
+  border: solid 1px;
   border-radius: 10px;
   border-color: @surface2;
   margin-left: 3px;
@@ -123,7 +123,7 @@ window#waybar {
 /* Custom Media */
 #custom-media {
   color: @dark;
-  border: solid 2px;
+  border: solid 1px;
   border-radius: 10px;
   border-color: @surface2;
   margin-left: 3px;
@@ -131,7 +131,7 @@ window#waybar {
 }
 
 #custom-media:hover {
-  border-width: 3px;
+  border-width: 2px;
   background-color: @mauve;
   transition-duration: 0.2s;
 }
@@ -139,14 +139,14 @@ window#waybar {
 #custom-media.playing {
   border-color: #27b21b;
   background-color: @green;
-  border-width: 2px;
+  border-width: 1px;
   transition-duration: 0.2s;
 }
 
 #custom-media.paused {
   border-color: #eb4d4b;
   background-color: @red;
-  border-width: 2px;
+  border-width: 1px;
   transition-duration: 0.2s;
 }
 
@@ -159,7 +159,7 @@ window#waybar {
 /* Pulseaudio */
 #pulseaudio {
   background-color: @mauve;
-  border: solid 2px;
+  border: solid 1px;
   border-radius: 10px;
   border-color: #b373ff;
   color: @dark;
@@ -180,7 +180,7 @@ window#waybar {
   background-color: @pink;
   color: @dark;
   border-radius: 10px;
-  border: solid 2px;
+  border: solid 1px;
   border-color: #d298fe;
 }
 
@@ -190,7 +190,7 @@ window#waybar {
   color: @dark;
   padding: 1px 8px;
   margin-right: 10px;
-  border: solid 2px;
+  border: solid 1px;
   border-radius: 10px;
   border-color: #eb4d4b;
 }
@@ -205,7 +205,7 @@ window#waybar {
   margin-right: 0px;
   border-radius: 10px 0px 0px 10px;
   border-style: solid;
-  border-width: 2px 0px 2px 2px;
+  border-width: 1px 0px 1px 1px;
   border-color: @surface2;
 }
 
@@ -216,7 +216,7 @@ window#waybar {
   margin-top: 5px;
   margin-bottom: 5px;
   border-style: solid;
-  border-width: 2px 0px 2px 0px;
+  border-width: 1px 0px 1px 0px;
   border-color: @surface2;
 }
 
@@ -229,14 +229,14 @@ window#waybar {
   margin-right: 3px;
   border-radius: 0px 10px 10px 0px;
   border-style: solid;
-  border-width: 2px 2px 2px 0px;
+  border-width: 1px 1px 1px 0px;
   border-color: @surface2;
 }
 
 #memory {
   background-color: @surface1;
   color: #cccccc;
-  border: solid 2px;
+  border: solid 1px;
   border-radius: 10px;
   border-color: @surface2;
 }
@@ -245,7 +245,7 @@ window#waybar {
   background-color: @surface1;
   margin: 5px;
   padding: 5px;
-  border: solid 2px;
+  border: solid 1px;
   border-radius: 10px;
   border-color: @surface2;
 }

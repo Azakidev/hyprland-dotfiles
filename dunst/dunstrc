@@ -16,7 +16,7 @@ corner_radius = 10
 font = "MiSans 12"
 format = "<b>%s</b>\n%b"
 
-frame_width = 2
+frame_width = 1
 frame_color = "#45475a"
 background = "#313244aa"
 min_icon_size = 48
