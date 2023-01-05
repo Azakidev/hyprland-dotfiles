@@ -5,10 +5,10 @@ indicator
 timestr=%I:%M %p
 datestr=%d / %m / %Y
 
-font=Google Sans
+font=MiSans
 
-indicator-radius=100
-indicator-thickness=8
+indicator-radius=120
+indicator-thickness=4
 
 effect-blur=8x5 
 effect-vignette=.5:0.5 
@@ -25,10 +25,10 @@ text-caps-lock-color=f2cdcd
 line-color=00000000
 
 inside-color=313244BF
-inside-caps-lock-color=45475a
-inside-ver-color=89dceb
-inside-wrong-color=f38ba8
-inside-clear-color=a6e3a1
+inside-caps-lock-color=45475abf
+inside-ver-color=89dcebbf
+inside-wrong-color=f38ba8bf
+inside-clear-color=a6e3a1bf
 
 separator-color=00000000
 
