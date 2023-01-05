@@ -5,7 +5,7 @@
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["memory", "idle_inhibitor", "custom/swaylock", "custom/gammastep", "custom/media", "tray", "pulseaudio", "custom/notifications", "custom/sysmenu"],
+    "modules-right": ["memory", "idle_inhibitor", /*"custom/swaylock",*/ "custom/gammastep", "custom/media", "tray", "pulseaudio", "custom/notifications", "custom/sysmenu"],
 
     // Modules configuration
     "wlr/workspaces": {
@@ -96,8 +96,8 @@
         "on-click-right": "dunstctl history-pop & dunstctl history-pop & dunstctl history-pop"
     },
     "custom/swaylock": {
-        "fortmat": "🔒️",
+        "format": "🔒️",
         "on-click": "swaylock",
-        "tooltip":false
+        "tooltip": false
     }
 }
