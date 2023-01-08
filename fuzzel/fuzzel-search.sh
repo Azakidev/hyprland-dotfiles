@@ -11,3 +11,5 @@ if [ -z "$result" ]; then exit; fi
 url=$(cat /tmp/search.tmp | jq -r ".[] | select(.title == \"$result\") | .url")
 
 firefox "$url"
+
+rm /tmp/search.tmp
