@@ -1,14 +1,14 @@
 #!/bin/zsh
 
 confirm() {
-	answer=$(printf "Yes\nNo" | wofi --dmenu --insensitive --conf ~/.config/wofi/confirm --style ~/.config/wofi/confirm.css)
+	answer=$(printf "Yes\nNo" | fuzzel --dmenu --width=5 --lines=2)
 	echo $answer
 }
 
-if (ps -a | grep wofi >/dev/null); then
-	killall -q wofi
+if (ps -a | grep fuzzel >/dev/null); then
+	killall -q fuzzel
 else
-	chosen=$(printf "󰐥 Power Off\n󰑐 Restart\n󰌾 Lock\n󰗽 Logout" | wofi --dmenu --insensitive --conf ~/.config/wofi/powermenu --style ~/.config/wofi/powermenu.css)
+	chosen=$(printf "󰐥 Power Off\n󰑐 Restart\n󰌾 Lock\n󰗽 Logout" | fuzzel --dmenu --width=7 --lines=4)
 
 	case "$chosen" in
 	"󰐥 Power Off")
