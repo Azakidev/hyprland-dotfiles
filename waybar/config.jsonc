@@ -102,9 +102,9 @@
     },
     "custom/updates": {
         "format": "🔄 {}",
-        "interval": "900",
+        "interval": "300",
         "tooltip": false,
-        "exec": "pacman -Sup | wc -l",
+        "exec": "yay -Sup | wc -l",
         "on-click": "kitty -e yay -Syu"
     }
 }
