@@ -8,9 +8,12 @@ confirm() {
 if (ps -a | grep fuzzel >/dev/null); then
 	killall -q fuzzel
 else
-	chosen=$(printf "󰐥 Power Off\n󰑐 Restart\n󰌾 Lock\n󰗽 Logout" | fuzzel --dmenu --width=7 --lines=4)
+	chosen=$(printf "直 Wi-Fi\n󰐥 Power Off\n󰑐 Restart\n󰌾 Lock\n󰗽 Logout" | fuzzel --dmenu --width=7 --lines=4)
 
 	case "$chosen" in
+	"直 Wi-Fi")
+		~/Documents/hyprland-dotfiles/fuzzel/fuzzel-wifi-menu.sh
+		;;
 	"󰐥 Power Off")
 		answer=$(confirm &)
 		if [[ $answer == "Yes" ]]; then

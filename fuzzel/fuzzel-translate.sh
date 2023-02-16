@@ -125,7 +125,7 @@ from=$(getlang "From: ")
 if [ -z "$from" ]; then exit; fi
 to=$(getlang "To: ")
 if [ -z "$to" ]; then exit; fi
-text=$(echo "" | fuzzel --dmenu --dmenu --prompt="Text: " --lines=1)
+text=$(echo "" | fuzzel --dmenu --dmenu --prompt="Text: " --lines=0)
 if [ -z "$text" ]; then exit; fi
 
 trans -no-ansi $from:$to $text | fuzzel --dmenu --width=50 --lines=20
