@@ -105,6 +105,6 @@
         "interval": "300",
         "tooltip": false,
         "exec": "yay -Sup | wc -l",
-        "on-click": "kitty -e yay -Syu"
+        "on-click": "kitty -e yay -Syu --ignore huiontablet"
     }
 }
