@@ -44,6 +44,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 alias upd='yay -Syu --ignore huiontablet'
 alias add='yay -S'
 alias remove='yay -R'
+
 alias clean='sudo pacman -Rs $(pacman -Qdtq) || echo "No orphans to remove"'
 alias cleanss='rm --interactive=never ~/Pictures/Screenshots/*.png && echo Clened screenshots'
 alias cleanyay='rm -rf --interactive=never ~/.cache/yay/* && echo Cleaned yay cache'
@@ -52,3 +53,5 @@ alias cleanall='clean && cleanss && cleanyay && echo "Nice and tidy!"'
 alias uefi='systemctl reboot --firmware-setup'
 alias rs='trash'
 alias clr='clear'
+
+alias warp='flatpak run app.drey.Warp'
