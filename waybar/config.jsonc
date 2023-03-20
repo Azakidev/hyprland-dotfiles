@@ -5,7 +5,7 @@
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/updates", "memory", "idle_inhibitor", /*"custom/swaylock",*/ "custom/gammastep", "custom/media", "tray", "pulseaudio", "custom/notifications", "custom/sysmenu"],
+    "modules-right": ["memory", "idle_inhibitor", /*"custom/swaylock",*/ "custom/gammastep", "custom/media", "tray", "pulseaudio", "custom/notifications", "custom/sysmenu"],
 
     // Modules configuration
     "wlr/workspaces": {
@@ -99,12 +99,5 @@
         "format": "🔒️",
         "on-click": "swaylock",
         "tooltip": false
-    },
-    "custom/updates": {
-        "format": "🔄 {}",
-        "interval": "300",
-        "tooltip": false,
-        "exec": "yay -Sup | wc -l",
-        "on-click": "kitty -e yay -Syu --ignore huiontablet"
     }
 }
