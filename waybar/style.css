@@ -158,11 +158,11 @@ window#waybar {
 
 /* Pulseaudio */
 #pulseaudio {
-  background-color: @mauve;
+  background-color: @surface1;
   border: solid 1px;
   border-radius: 10px;
-  border-color: #b373ff;
-  color: @dark;
+  border-color: @surface2;
+  color: #cccccc;
   transition-duration: 0.2s;
   margin-left: 3px;
   margin-right: 3px;
