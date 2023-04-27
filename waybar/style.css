@@ -251,7 +251,7 @@ window#waybar {
   border-color: @surface2;
 }
 
-#custom-updates {
+#custom-ddcutil-brightness {
   background-color: @surface1;
   margin: 5px;
   margin-right: 2px;
