@@ -188,7 +188,8 @@ window#waybar {
 #custom-sysmenu {
   background-color: @red;
   color: @dark;
-  padding: 1px 8px;
+  padding: 2px 8px;
+  margin-left: 0px;
   margin-right: 10px;
   border: solid 1px;
   border-radius: 10px;
@@ -253,9 +254,9 @@ window#waybar {
 
 #custom-ddcutil-brightness {
   background-color: @surface1;
-  margin: 5px;
+  margin: 4px;
   margin-right: 2px;
-  padding: 5px;
+  padding: 4px;
   border: solid 1px;
   border-radius: 10px;
   border-color: @surface2;
