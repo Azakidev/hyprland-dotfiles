@@ -42,7 +42,7 @@
           "car": "",
           "default": ["󰕿", "󰖀", "󰕾"]
         },
-        "on-click": "pkill pavucontrol || pavucontrol",
+        "on-click": "pkill myxer || myxer",
         "tooltip": false
       },
     "custom/media": {
