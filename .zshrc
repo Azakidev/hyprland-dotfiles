@@ -44,6 +44,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 alias upd='yay -Syu --ignore huiontablet'
 alias add='yay -S'
 alias remove='yay -R'
+alias cat='bat'
+alias htop='btop'
 
 alias clean='sudo pacman -Rs $(pacman -Qdtq) || echo "No orphans to remove"'
 alias cleanss='rm --interactive=never ~/Pictures/Screenshots/*.png && echo Clened screenshots'
@@ -55,3 +57,6 @@ alias rs='trash'
 alias clr='clear'
 
 alias warp='flatpak run app.drey.Warp'
+
+
+eval $(thefuck --alias)

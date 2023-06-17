@@ -39,8 +39,7 @@ timeout = 10
     script = "~/Documents/hyprland-dotfiles/dunst/notifsound.sh"
 
 [urgency_critical]
-    frame_color = "#cba6f7"
-    foreground = "#ffffff"
-    background = "#f38ba8aa"
+    frame_color = "#ff5555"
+    foreground = "#ff79c6"
     timeout = 0
     script = "~/Documents/hyprland-dotfiles/dunst/notifsound.sh"
