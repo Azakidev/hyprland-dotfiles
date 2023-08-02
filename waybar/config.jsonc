@@ -3,12 +3,12 @@
     "position": "top",
 
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces", "hyprland/window"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
     "modules-right": ["custom/ddcutil-brightness", "memory", "idle_inhibitor", /*"custom/swaylock",*/ "custom/gammastep", "custom/media", "tray", "pulseaudio", "custom/notifications", "custom/sysmenu"],
 
     // Modules configuration
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "all-outputs": true,
         "format": "{name}",
         "on-click": "activate",
@@ -22,25 +22,25 @@
     "clock": {
         "timezone": "Europe/Madrid",
         "interval": 60,
-        "format": "{:%I:%M %p}",
+        "format": "{:%I:%M}",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d-%m-%Y}"
+        "format-alt": "{:%d/%m/%Y}"
     },
     "pulseaudio": {
         "format": "{icon} {volume}% {format_source}",
         "format-bluetooth": "{icon}󰂯 {volume}% {format_source}",
         "format-bluetooth-muted": "󰖁󰂯 {volume}% {format_source}",
-        "format-muted": "󰖁 {volume}% {format_source}",
-        "format-source": "󰍬 {volume}%",
-        "format-source-muted": "󰍭 {volume}%",
+        "format-muted": "🔇 {volume}% {format_source}",
+        "format-source": "🎙️ {volume}%",
+        "format-source-muted": "🤐 {volume}%",
         "format-icons": {
-          "headphone": "󰋋",
+          "headphone": "🎧",
           "hands-free": "",
           "headset": "󰋋",
-          "phone": "",
+          "phone": "📱",
           "portable": "",
           "car": "",
-          "default": ["󰕿", "󰖀", "󰕾"]
+          "default": ["🔈", "🔉", "🔊"]
         },
         "on-click": "pkill myxer || myxer",
         "tooltip": false
@@ -77,7 +77,7 @@
         "format-connected-battery": "󰂯 {device_alias} 󰂄 {device_battery_percentage}%"
     },
     "custom/sysmenu": {
-        "format": "󰤆",
+        "format": "⚙️",
         "on-click": "~/.config/waybar/scripts/sysmenu.sh &",
         "tooltip": false
       },

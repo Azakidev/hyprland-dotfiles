@@ -1,17 +1,20 @@
 screenshots
 clock
 indicator
+grace-no-mouse
+grace-no-touch
 
-timestr=%I:%M %p
+timestr=%I:%M
 datestr=%d / %m / %Y
 
-font=MiSans
+font=Nunito
+font-size=64
 
 indicator-radius=120
 indicator-thickness=4
 
-effect-blur=8x5 
-effect-vignette=.5:0.5 
+effect-blur=8x5
+effect-vignette=.5:0.2
 
 ring-color=DEB4FEFF
 ring-clear-color=A77DBEBF

@@ -1,18 +1,19 @@
 @import "/home/zazag/.config/waybar/themes/colors.css";
 
-/* Download icons font: https://github.com/Templarian/MaterialDesign-Font */
 * {
-  font-family: Twemoji Regular, MiSans Regular, Material Design Icons Regular;
+  font-family: 'Nunito Regular';
   font-size: 14px;
 }
 
 /* Waybar */
 window#waybar {
-  background-color: rgba(30, 30, 46, 0.6);
-  color: @text;
+  padding: 4px 10px;
+  margin: 4px;
+  background-color: rgba(30, 30, 46, 0.05);
   transition-property: background-color;
   transition-duration: 0.5s;
   border-radius: 0px 0px 10px 10px;
+  color: @text;
 }
 
 /* Modules */
@@ -29,86 +30,78 @@ window#waybar {
 #custom-sysmenu,
 
 #window {
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  margin-right: 2px;
+  padding: 10px;
   transition-duration: 0.2s;
+  color: @dark;
 }
 
 /* Launcher */
 #custom-launcher {
-  background-color: pink;
-  color: @dark;
   padding: 1px 8px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  margin-right: 2px;
+  margin: 4px;
   transition-duration: 0.2s;
+  background-color: @pink;
+  color: @dark;
 }
 
 /* Workspaces */
 #workspaces {
-  margin-left: 2px;
-  margin-right: 2px;
+  padding: 2px 8px;
+  margin-left: 0px;
   transition-duration: 0.2s;
 }
 
 #workspaces button {
-  background-color: @surface0;
+  font-size: large;
   padding: 1px 8px;
-  color: @subtext;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 2px;
-  margin-right: 2px;
+  margin: 4px 2px 2px 4px;
   border-radius: 10px;
-  border: solid 1px;
-  border-color: @surface1;
+  border:solid 0px;
   transition-duration: 0.2s;
+  background-color: @surface0;
+  color: @subtext;
+  border-color: @surface1;
 }
 
 #workspaces button:hover {
+  font-size: larger;
+  font-weight: 900;
   background-color: @purple;
   color: @dark;
   border-color: @pink;
-  transition-duration: 0.2s;
 }
 
 #workspaces button.active {
+  font-size: large;
+  font-weight: 800;
   padding: 1px 12px;
+  border-color: #d298fe;
   background-color: @pink;
   color: @dark;
-  border-color: #d298fe;
-  transition-duration: 0.2s;
 }
 
 #workspaces button.focused {
+  border-color: #d298fe;
   background-color: @pink;
   color: @dark;
-  border-color: #d298fe;
-  transition-duration: 0.2s;
 }
 
 #workspaces button.urgent {
-  background-color: @red;
-  color: @dark;
   border-color: #eb4d4b;
   transition-duration: 0.2s;
+  background-color: @red;
+  color: @dark;
 }
 
 /* Tray */
 #tray {
+  padding: 1px 8px;
+  margin: 4px;
+  border:solid 0px;
+  border-radius: 10px;
   background-color: @surface1;
   color: @dark;
-  border: solid 1px;
-  border-radius: 10px;
   border-color: @surface2;
-  margin-left: 3px;
-  margin-right: 3px;
 }
 
 #tray > .passive {
@@ -122,32 +115,28 @@ window#waybar {
 
 /* Custom Media */
 #custom-media {
-  color: @dark;
-  border: solid 1px;
+  padding: 1px 8px;
+  margin: 4px;
+  border:solid 0px;
   border-radius: 10px;
+  transition-duration: 0.2s;
+  color: @dark;
   border-color: @surface2;
-  margin-left: 3px;
-  margin-right: 3px;
 }
 
 #custom-media:hover {
   border-width: 2px;
   background-color: @mauve;
-  transition-duration: 0.2s;
 }
 
 #custom-media.playing {
   border-color: #27b21b;
   background-color: @green;
-  border-width: 1px;
-  transition-duration: 0.2s;
 }
 
 #custom-media.paused {
   border-color: #eb4d4b;
   background-color: @red;
-  border-width: 1px;
-  transition-duration: 0.2s;
 }
 
 /* Backlight */
@@ -158,106 +147,106 @@ window#waybar {
 
 /* Pulseaudio */
 #pulseaudio {
-  background-color: @surface1;
-  border: solid 1px;
+  padding: 1px 8px;
+  margin: 4px;
+  border:solid 0px;
   border-radius: 10px;
-  border-color: @surface2;
-  color: #cccccc;
   transition-duration: 0.2s;
-  margin-left: 3px;
-  margin-right: 3px;
+  color: #cccccc;
+  background-color: @surface1;
+  border-color: @surface2;
 }
 
 #pulseaudio.muted {
-  background-color: @red;
   border-color: #eb4d4b;
-  color: @dark;
   transition-duration: 0.2s;
+  color: @dark;
+  background-color: @red;
 }
 
-/* Clock */
 #clock {
-  background-color: @pink;
-  color: @dark;
+  font-family: 'Nunito Black';
+  font-weight: 800;
+  font-size: large;
+  padding: 1px 8px;
+  margin: 4px;
   border-radius: 10px;
-  border: solid 1px;
-  border-color: #d298fe;
+  border: solid 0px;
+  transition-duration: 0.2s;
+  border-color: @purple;
+  color: @pink;
+  background-color: @surface1;
 }
 
 /* Custom SysMenu */
 #custom-sysmenu {
-  background-color: @red;
-  color: @dark;
-  padding: 2px 8px;
-  margin-left: 0px;
-  margin-right: 10px;
-  border: solid 1px;
+  padding: 1px 8px;
+  margin: 4px;
+  margin-right: 8px;
+  border:solid 0px;
   border-radius: 10px;
   border-color: #eb4d4b;
+  color: @dark;
+  background-color: @surface1;
+}
+
+#custom-swaylock {
+  color: #ffffff;
+  padding: 1px 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  border-color: @surface2;
+  background-color: @surface1;
 }
 
 #idle_inhibitor {
-  background-color: @surface1;
   color: #ffffff;
   padding: 1px 8px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 3px;
-  margin-right: 0px;
+  margin: 4px 0px 4px 4px;
   border-radius: 10px 0px 0px 10px;
   border-style: solid;
   border-width: 1px 0px 1px 1px;
   border-color: @surface2;
-}
-
-#custom-swaylock {
   background-color: @surface1;
-  color: #ffffff;
-  padding: 1px 8px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-style: solid;
-  border-width: 1px 0px 1px 0px;
-  border-color: @surface2;
 }
 
 #custom-gammastep {
-  background-color: @surface1;
   padding: 1px 8px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 0px;
-  margin-right: 3px;
+  margin: 4px 4px 4px 0px;
   border-radius: 0px 10px 10px 0px;
   border-style: solid;
   border-width: 1px 1px 1px 0px;
   border-color: @surface2;
+  background-color: @surface1;
 }
 
 #memory {
-  background-color: @surface1;
   color: #cccccc;
-  margin-left: 2px;
-  border: solid 1px;
+  margin: 4px;
+  padding: 1px 8px;
+  border:solid 0px;
   border-radius: 10px;
   border-color: @surface2;
+  background-color: @surface1;
 }
 
 #custom-notifications {
-  background-color: @surface1;
-  margin: 5px;
-  padding: 5px;
-  border: solid 1px;
+  margin: 4px;
+  padding: 1px 8px;
+  border:solid 0px;
   border-radius: 10px;
   border-color: @surface2;
+  background-color: @surface1;
 }
 
 #custom-ddcutil-brightness {
-  background-color: @surface1;
   margin: 4px;
   margin-right: 2px;
-  padding: 4px;
-  border: solid 1px;
+  padding: 1px 8px;
+  border:solid 0px;
   border-radius: 10px;
   border-color: @surface2;
+  background-color: @surface1;
 }
