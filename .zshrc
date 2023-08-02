@@ -41,22 +41,22 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias upd='yay -Syu --ignore huiontablet'
+alias upd='yay -Syu'
 alias add='yay -S'
 alias remove='yay -R'
 alias cat='bat'
 alias htop='btop'
 
 alias clean='sudo pacman -Rs $(pacman -Qdtq) || echo "No orphans to remove"'
-alias cleanss='rm --interactive=never ~/Pictures/Screenshots/*.png && echo Clened screenshots'
 alias cleanyay='rm -rf --interactive=never ~/.cache/yay/* && echo Cleaned yay cache'
-alias cleanall='clean && cleanss && cleanyay && echo "Nice and tidy!"'
+alias cleantasks='rm -rf .cache/evolution/tasks/* && echo "Task cache cleaned!"'
+alias cleanall='clean && cleantasks && cleanyay && echo "Nice and tidy!"'
 
 alias uefi='systemctl reboot --firmware-setup'
 alias rs='trash'
 alias clr='clear'
 
 alias warp='flatpak run app.drey.Warp'
-
+alias discord='discord --enable-features=UseOzonePlatform --ozone-platform=wayland'
 
 eval $(thefuck --alias)
