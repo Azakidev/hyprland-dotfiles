@@ -1,0 +1,104 @@
+@mixin player_color($color) {
+    button {
+        .shuffle.enabled {
+            color: $color;
+        }
+
+        .loop {
+            &.playlist, &.track {
+                color: $color;
+            }
+        }
+
+        &:active label {
+            color: $color;
+        }
+    }
+
+    .position-slider:hover trough {
+        background-color: transparentize($color, 0.5);
+    }
+}
+
+@mixin media() {
+    label {
+        color: $shader_fg;
+    }
+
+    .shader {
+        @include shader;
+    }
+
+    .cover-art {
+        border-radius: $radii*0.8;
+        min-height: 100px;
+        min-width: 100px;
+        margin: $spacing;
+        margin-bottom: 0;
+
+        .shader {
+            background-color: transparent;
+            border-radius: max($radii*0.8 - 1px, 0);
+        }
+    }
+
+    .cover-art-bg, .cover-art {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .labels {
+        margin-top: $spacing;
+
+        label {
+            font-size: 1.1em;
+
+            &.title {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .position-slider {
+        @include slider($width: .4em, $slider: false, $gradient: linear-gradient($shader_fg, $shader_fg), $radii: 0);
+        margin: $spacing 0;
+
+        trough {
+            border: none;
+            background-color: transparentize($shader_fg, 0.7);
+        }
+    }
+
+    .footer-box {
+        margin: -$spacing/2 $spacing $spacing/2;
+    }
+
+    .controls button {
+        all: unset;
+        margin: 0 $spacing;
+
+        label {
+            font-size: 2em;
+            min-width: 1em;
+            color: transparentize($shader_fg, 0.2);
+            transition: $transition;
+
+            &.shuffle, &.loop {
+                font-size: 1.4em;
+
+            }
+        }
+
+        &:hover label {
+            color: transparentize($shader_fg, 0.1);
+        }
+
+        &:active label {
+            color: $magenta;
+        }
+    }
+
+    &.firefox .footer-box {
+        margin-top: $spacing;
+    }
+}

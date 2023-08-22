@@ -1,0 +1,1 @@
+ddcutil getvcp 10 | awk '{print $9}' | sed 's/.$//'
