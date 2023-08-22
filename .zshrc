@@ -59,4 +59,6 @@ alias clr='clear'
 alias warp='flatpak run app.drey.Warp'
 alias discord='discord --enable-features=UseOzonePlatform --ozone-platform=wayland'
 
+alias batt='~/Documents/hyprland-dotfiles/batt.sh'
+
 eval $(thefuck --alias)
