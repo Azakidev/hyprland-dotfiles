@@ -2,12 +2,11 @@
 
 * {
   font-family: 'Nunito Regular';
-  font-size: 14px;
 }
 
 /* Waybar */
 window#waybar {
-  padding: 4px 10px;
+  padding: 1px 8px;
   margin: 4px;
   background-color: rgba(30, 30, 46, 0.05);
   transition-property: background-color;
@@ -30,8 +29,10 @@ window#waybar {
 #custom-sysmenu,
 
 #window {
-  padding: 10px;
-  transition-duration: 0.2s;
+  font-size: 15px;
+  padding: 1px 12px;
+  padding-left: 0;
+  margin: 4px;
   color: @dark;
 }
 
@@ -53,7 +54,8 @@ window#waybar {
 }
 
 #workspaces button {
-  font-size: large;
+  font-size: medium;
+  font-weight: 600;
   padding: 1px 8px;
   margin: 4px 2px 2px 4px;
   border-radius: 10px;
@@ -66,7 +68,7 @@ window#waybar {
 
 #workspaces button:hover {
   font-size: larger;
-  font-weight: 900;
+  font-weight: 800;
   background-color: @purple;
   color: @dark;
   border-color: @pink;
@@ -74,9 +76,10 @@ window#waybar {
 
 #workspaces button.active {
   font-size: large;
-  font-weight: 800;
+  font-weight: 700;
   padding: 1px 12px;
   border-color: #d298fe;
+  box-shadow: 0px 0px 10px @purple;
   background-color: @pink;
   color: @dark;
 }
@@ -120,6 +123,7 @@ window#waybar {
   margin: 4px;
   border:solid 0px;
   border-radius: 10px;
+  letter-spacing: 4px;
   transition-duration: 0.2s;
   color: @dark;
   border-color: @surface2;
@@ -148,12 +152,13 @@ window#waybar {
 
 /* Pulseaudio */
 #pulseaudio {
+  font-size: 15px;
   padding: 1px 8px;
   margin: 4px;
   border:solid 0px;
   border-radius: 10px;
   transition-duration: 0.2s;
-  color: #cccccc;
+  color: @text;
   background-color: @surface1;
   border-color: @surface2;
 }
@@ -168,47 +173,36 @@ window#waybar {
 #clock {
   font-family: 'Nunito Black';
   font-weight: 800;
-  font-size: large;
+  font-size: 18px;
   padding: 1px 8px;
   margin: 4px;
   border-radius: 10px;
-  border: solid 0px;
-  transition-duration: 0.2s;
-  border-color: @purple;
   color: @pink;
   background-color: @surface1;
+  transition-duration: 0.2s;
 }
 
-/* Custom SysMenu */
 #custom-sysmenu {
   padding: 1px 8px;
   margin: 4px;
   margin-right: 8px;
-  border:solid 0px;
   border-radius: 10px;
-  border-color: #eb4d4b;
   color: @dark;
-  background-color: @surface1;
+  background-color: @pink;
 }
 
 #custom-swaylock {
-  color: #ffffff;
   padding: 1px 8px;
   margin-top: 4px;
   margin-bottom: 4px;
-  border-style: solid;
-  border-width: 1px 0px 1px 0px;
   border-color: @surface2;
   background-color: @surface1;
 }
 
 #idle_inhibitor {
-  color: #ffffff;
   padding: 1px 8px;
   margin: 4px 0px 4px 4px;
   border-radius: 10px 0px 0px 10px;
-  border-style: solid;
-  border-width: 1px 0px 1px 1px;
   border-color: @surface2;
   background-color: @surface1;
 }
@@ -217,25 +211,24 @@ window#waybar {
   padding: 1px 8px;
   margin: 4px 4px 4px 0px;
   border-radius: 0px 10px 10px 0px;
-  border-style: solid;
-  border-width: 1px 1px 1px 0px;
   border-color: @surface2;
   background-color: @surface1;
 }
 
 #memory {
-  color: #cccccc;
-  margin: 4px;
+  font-size: 15px;
   padding: 1px 8px;
+  margin: 4px;
   border:solid 0px;
   border-radius: 10px;
+  color: @text;
   border-color: @surface2;
   background-color: @surface1;
 }
 
 #custom-notifications {
-  margin: 4px;
   padding: 1px 8px;
+  margin: 4px;
   border:solid 0px;
   border-radius: 10px;
   border-color: @surface2;
@@ -243,9 +236,10 @@ window#waybar {
 }
 
 #custom-ddcutil-brightness {
+  font-size: 15px;
+  padding: 1px 8px;
   margin: 4px;
   margin-right: 2px;
-  padding: 1px 8px;
   border:solid 0px;
   border-radius: 10px;
   border-color: @surface2;

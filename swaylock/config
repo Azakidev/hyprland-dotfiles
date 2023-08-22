@@ -10,8 +10,8 @@ datestr=%d / %m / %Y
 font=Nunito
 font-size=64
 
-indicator-radius=120
-indicator-thickness=4
+indicator-radius=150
+indicator-thickness=5
 
 effect-blur=8x5
 effect-vignette=.5:0.2

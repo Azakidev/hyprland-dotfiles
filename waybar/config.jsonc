@@ -5,7 +5,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/ddcutil-brightness", "memory", "idle_inhibitor", /*"custom/swaylock",*/ "custom/gammastep", "custom/media", "tray", "pulseaudio", "custom/notifications", "custom/sysmenu"],
+    "modules-right": ["custom/ddcutil-brightness", "memory", "idle_inhibitor", "custom/gammastep", "tray", "custom/media", "pulseaudio", "custom/notifications", "custom/sysmenu"],
 
     // Modules configuration
     "hyprland/workspaces": {
@@ -23,8 +23,8 @@
         "timezone": "Europe/Madrid",
         "interval": 60,
         "format": "{:%I:%M}",
-        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d/%m/%Y}"
+        "format-alt": "{:%d/%m/%Y}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
     },
     "pulseaudio": {
         "format": "{icon} {volume}% {format_source}",
