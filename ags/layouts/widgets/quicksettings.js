@@ -251,6 +251,17 @@ const BluetoothToggle = () => ArrowToggle({
     name: 'bluetooth',
 });
 
+const SysMon = () => Button({
+    className: 'monitor',
+    halign: 'end',
+    valign: 'center',
+    onClicked: () => {
+        execAsync('gnome-system-monitor -p');
+        App.closeWindow('quicksettings');        
+    },
+    child: Icon('computer-symbolic')
+})
+
 const SmallToggle = (toggle, indicator) => toggle({
     className: 'toggle',
     halign: 'fill',
@@ -320,7 +331,13 @@ export const PopupContent = () => Box({
                 
             ],
         }),
-        memory.MemBar(),
+        Box({
+            className: 'membar',
+            children: [
+                memory.MemBar(),
+                SysMon(),
+            ]
+        }),
         VolumeBox(),
         BrightnessBox(),
         Box({

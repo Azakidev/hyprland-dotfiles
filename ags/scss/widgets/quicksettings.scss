@@ -41,25 +41,40 @@ window#quicksettings .quicksettings {
         }
     }
 
-    .memory-progress {
-        progressbar {
-            @include slider($width: $spacing*3.4);
-            margin-top: $spacing;
+    .membar {
+        .memory-progress {
+            progressbar {
+                @include slider($width: $spacing*4.5);
+            }
+            
+            label {
+                margin: 0 $spacing;
+                
+                color: $accent_fg;
+                text-shadow: 0px 0px 2px $fg_color;
+                font-size: $spacing*2;
+                font-weight: bold;
+
+                transition-duration: 200ms;
+            }
+            
+            &.half label {
+                color: $fg_color;
+                text-shadow: 0px 0px 2px $accent_fg;
+            }
         }
 
-        label {
-            margin-top: $spacing;
-            color: $accent_fg;
-            font-size: $spacing*2;
-            font-weight: bold;
+        .monitor {
+            @include button;
+            margin: $spacing;
+            margin-right: 0;
+            padding: $spacing*1.5;
         }
-
-        &.half label { color: $fg_color; }
     }
 
     .volume-box {
         @include widget;
-        margin-top: $spacing;
+        margin-top: $spacing/2;
 
         scale {
             @include slider;
