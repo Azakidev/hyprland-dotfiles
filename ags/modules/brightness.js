@@ -1,4 +1,4 @@
-const { Service } = ags;
+const { App, Service } = ags;
 const { exec, execAsync } = ags.Utils;
 const { Icon, Label, Slider } = ags.Widget;
 
@@ -26,7 +26,7 @@ class BrightnessService extends Service {
 
     constructor() {
         super();
-        this._screen = Number(exec('/home/zazag/.config/ags/getbright.sh')) / 100;
+        this._screen = Number(exec(`${App.configDir}/getbright.sh`)) / 100;
     }
 }
 

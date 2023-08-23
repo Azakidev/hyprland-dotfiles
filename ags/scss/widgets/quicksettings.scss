@@ -25,22 +25,6 @@ window#quicksettings .quicksettings {
             margin: $spacing/2;
         }
 
-        .battery-progress {
-            progressbar {
-                @include slider($width: $spacing*3.4);
-                margin-top: $spacing;
-            }
-
-            label {
-                margin-top: $spacing;
-                color: $accent_fg;
-                font-size: $spacing*2;
-                font-weight: bold;
-            }
-
-            &.half label { color: $fg_color; }
-        }
-
         .system {
             button, .uptime {
                 @include button;
@@ -55,6 +39,22 @@ window#quicksettings .quicksettings {
                 padding: $spacing*1.5;
             }
         }
+    }
+
+    .memory-progress {
+        progressbar {
+            @include slider($width: $spacing*3.4);
+            margin-top: $spacing;
+        }
+
+        label {
+            margin-top: $spacing;
+            color: $accent_fg;
+            font-size: $spacing*2;
+            font-weight: bold;
+        }
+
+        &.half label { color: $fg_color; }
     }
 
     .volume-box {

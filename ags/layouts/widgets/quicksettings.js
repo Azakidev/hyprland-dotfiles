@@ -5,6 +5,8 @@ import * as network from '../../modules/network.js';
 import * as bluetooth from '../../modules/bluetooth.js';
 import * as notifications from '../../modules/notifications.js';
 import * as media from './media.js';
+import * as memory from '../../modules/memory.js'
+
 const { Button, Box, Icon, Label, Revealer } = ags.Widget;
 const { Service, App } = ags;
 const { Bluetooth, Audio, Network, Theme } = Service;
@@ -188,7 +190,7 @@ const BrightnessBox = () => Box({
     children: [
         Button({
             onClicked: () => {
-                execAsync('/home/zazag/Documents/hyprland-dotfiles/ags/gammastep.sh').catch(print);
+                execAsync(['bash', '-c', "pkill gammastep || gammastep"]).catch(print);
             },
             child: brightness.Indicator(),
         }),
@@ -318,6 +320,7 @@ export const PopupContent = () => Box({
                 
             ],
         }),
+        memory.MemBar(),
         VolumeBox(),
         BrightnessBox(),
         Box({
