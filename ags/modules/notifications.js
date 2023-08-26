@@ -4,7 +4,7 @@ const { lookUpIcon, execAsync, timeout } = ags.Utils;
 const { Box, Icon, Label, EventBox, Button, Stack, Revealer } = ags.Widget;
 
 ags.Service.Notifications.instance
-  .connect('notified', () => { if (!Notifications.dnd) execAsync(['mpv', '--no-video', '--volume=50', '/home/zazag/Documents/hyprland-dotfiles/dunst/notif.ogg']).catch(print) })
+  .connect('notified', () => { if (!Notifications.dnd) execAsync(['mpv', '--no-video', '--volume=60', '/home/zazag/Documents/hyprland-dotfiles/dunst/notif.ogg']).catch(print) })
 
 const NotificationIcon = ({ appEntry, appIcon, image }) => {
     if (image) {

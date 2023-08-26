@@ -52,6 +52,7 @@ export const SpeakerTypeIndicator = props => Icon({
 
 export const SpeakerPercentLabel = props => Label({
     ...props,
+    style: 'min-width: 45px',
     connections: [[Audio, label => {
         if (!Audio.speaker)
             return;

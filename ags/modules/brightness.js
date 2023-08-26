@@ -57,7 +57,7 @@ export const Indicator = props => Icon({
 
 export const PercentLabel = props => Label({
     ...props,
-    style: 'min-width: 55px',
+    style: 'min-width: 69px',
     connections: [
         [Brightness, label => label.label = `${Math.floor(Brightness.screen * 100)}%`],
     ],

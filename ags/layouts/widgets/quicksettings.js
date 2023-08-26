@@ -256,7 +256,7 @@ const SysMon = () => Button({
     halign: 'end',
     valign: 'center',
     onClicked: () => {
-        execAsync('gnome-system-monitor -p');
+        execAsync('flatpak run io.missioncenter.MissionCenter');
         App.closeWindow('quicksettings');        
     },
     child: Icon('computer-symbolic')

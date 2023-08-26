@@ -18,6 +18,7 @@ export const Launcher = ({ child }) => Button({
         btn.toggleClassName('active', win === 'overview' && visible);
     }]],
     onClicked: () => ags.App.toggleWindow('overview'),
+    onSecondaryClick: () => ags.App.toggleWindow('applauncher'),
     child: Box({ children: [child] }),
 });
 
