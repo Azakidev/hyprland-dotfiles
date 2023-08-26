@@ -2,7 +2,7 @@
 
 My dotfiles for hyprland
 
-It's also my first rice ever, do with these what you may
+No I will not make a script to install it
 
 Theme for apps is dracula
 
