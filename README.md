@@ -2,7 +2,7 @@
 
 My dotfiles for hyprland
 
-No I will not make a script to install it
+**UNMAINTAINED, I NO LONGER DAILY DRIVE HYPRLAND, THINGS MAY NOT WORK**
 
 Theme for apps is dracula
 
